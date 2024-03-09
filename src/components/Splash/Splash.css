@@ -1,0 +1,12 @@
+.Splash .background {
+    position: absolute;
+    width: 100%;
+}
+
+.Splash .navbar {
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    margin: auto;
+    padding: 1em;
+}
