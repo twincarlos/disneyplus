@@ -5,7 +5,7 @@
 
 #root {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: Avenir-Book;
@@ -37,11 +37,8 @@ button.secondary-button {
     border: 1px solid silver;
     padding-left: 16px;
     padding-right: 16px;
-    height: 50px;
     padding-top: 8px;
     padding-bottom: 8px;
-    font-size: 18px;
-    line-height: 18px;
     font-weight: 400;
     letter-spacing: 1px;
     text-decoration: none;
@@ -55,16 +52,13 @@ button.secondary-button:hover {
 }
 
 button.primary-button {
-    height: 60px;
     padding: 16.5px 24px;
     background: var(--button-primary-color);
     border: none;
     color: var(--text-color);
     border-radius: 4px;
     transition: all .2s ease 0s;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 400;
+    font-weight: 200;
     letter-spacing: 1px;
     text-decoration: none;
     text-transform: uppercase;
@@ -79,30 +73,25 @@ section {
 }
 
 h1 {
-    font-size: 44px;
     font-weight: 700;
     letter-spacing: normal;
     line-height: 1.2;
 }
 
 h4 {
-    font-size: 20px;
     font-weight: 300;
     line-height: 1.2;
 }
 
 h5 {
-    font-size: 18px;
     font-weight: 300;
 }
 
 h6 {
-    font-size: 16px;
     font-weight: 300;
 }
 
 p {
-    margin: 24px 0 0;
     font-style: normal;
     font-weight: 400;
     letter-spacing: .2px;
@@ -117,10 +106,76 @@ a {
     color: var(--text-color);
 }
 
+@media screen and (min-width: 500px) {
+    h1 {
+        font-size: 44px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 18px;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+        margin: 24px 0 0;
+    }
+
+    button.primary-button {
+        height: 60px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    button.secondary-button {
+        height: 50px;
+        font-size: 18px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    h4,
+    h5 {
+        font-size: 15px;
+    }
+
+    h6 {
+        font-size: 14px;
+    }
+
+    p {
+        font-size: 11px;
+    }
+
+    button.primary-button {
+        height: 50px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+    button.secondary-button {
+        height: 40px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
+
 :root {
     --background-color: #040714;
     --button-primary-color: #0063e5;
-    --button-secondary-color: rgba(0,0,0,.8);
+    --button-secondary-color: rgba(0, 0, 0, .8);
     --button-secondary-text-color: #040714;
     --text-color: #f9f9f9;
 }

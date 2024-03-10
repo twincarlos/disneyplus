@@ -1,12 +1,16 @@
 import './Splash.css';
 import background from "../../assets/splash-bg.jpeg";
+import mobileBackground from "../../assets/splash-mobile-bg.jpeg";
 import planOption1 from "../../assets/plan-option-1.png";
 import planOption2 from "../../assets/plan-option-2.png";
+import useWindowDimensions from "../UseWindowDimensinos";
 
 function Splash() {
+    const { width } = useWindowDimensions();
+
     return (
         <div className="main Splash">
-            <img className="background" src={background} alt="" />
+            <img className="background" src={width > 500 ? background : mobileBackground} alt="" />
             <div className="page">
                 <div className="navbar">
                     <button className="secondary-button">LOG IN</button>

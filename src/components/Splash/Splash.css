@@ -11,44 +11,85 @@
     padding: 1em;
 }
 
-.Splash section.stream-more {
-    padding-left: 5em;
-}
-
-.Splash section.stream-more .content {
-    width: 640px;
-}
-
-.plan-options {
-    display: flex;
-    gap: 20px;
-}
-
-.plan-option:first-child img {
-    width: 200px;
-}
-
-.plan-option:last-child img {
-    width: 240px;
-}
-
-.plan-option {
-    width: 308px;
-}
-
-.plan-option button {
-    width: 100%;
-}
-
-.view-all-plan-options {
-    font-size: 20px;
-}
-
-.stream-more h4, .stream-more h5,
-.stream-more h6, .stream-more p {
+.stream-more h5,
+.stream-more h6,
+.stream-more p {
     color: silver;
 }
 
-.stream-more p {
-    font-size: 12px;
+@media screen and (min-width: 500px) {
+
+    .Splash section.stream-more {
+        padding-left: 5em;
+    }
+
+    .Splash section.stream-more .content {
+        width: 640px;
+    }
+
+    .plan-options {
+        display: flex;
+        gap: 20px;
+    }
+
+    .plan-option:first-child img {
+        width: 200px;
+    }
+
+    .plan-option:last-child img {
+        width: 240px;
+    }
+
+    .plan-option {
+        width: 308px;
+    }
+
+    .plan-option button {
+        width: 308px;
+    }
+
+    .view-all-plan-options {
+        font-size: 20px;
+    }
+
+    .stream-more p {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .Splash .page {
+        text-align: center;
+    }
+
+    .Splash section.stream-more {
+        margin-top: 60px;
+    }
+
+    .Splash section.stream-more .content {
+        padding: 2em;
+    }
+
+    .Splash h4 {
+        font-size: 15px;
+    }
+
+    .plan-options {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .plan-option:first-child img {
+        width: 180px;
+    }
+
+    .plan-option:last-child img {
+        width: 220px;
+    }
+
+    .plan-option button {
+        width: 320px;
+    }
 }
