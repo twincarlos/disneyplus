@@ -10,3 +10,45 @@
     margin: auto;
     padding: 1em;
 }
+
+.Splash section.stream-more {
+    padding-left: 5em;
+}
+
+.Splash section.stream-more .content {
+    width: 640px;
+}
+
+.plan-options {
+    display: flex;
+    gap: 20px;
+}
+
+.plan-option:first-child img {
+    width: 200px;
+}
+
+.plan-option:last-child img {
+    width: 240px;
+}
+
+.plan-option {
+    width: 308px;
+}
+
+.plan-option button {
+    width: 100%;
+}
+
+.view-all-plan-options {
+    font-size: 20px;
+}
+
+.stream-more h4, .stream-more h5,
+.stream-more h6, .stream-more p {
+    color: silver;
+}
+
+.stream-more p {
+    font-size: 12px;
+}
